@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #86352e; margin: 30px; ">
+    <div style="color: white; display: flex; flex-direction: column; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+        <form action="/addMovie" method="POST">
+            <h1>Añadir una pelicula</h1>
+            <p>Nombre:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="text" name="title" placeholder="Ingresa el nombre de la palicula"><br>
+            <p>Duracion:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="number" name="duration" placeholder="Ingrese la duracion de la pelicula"><br>
+            <p>Nombre del director:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="text" name="director" placeholder="Ingrese el nombre del director de la pelicula"><br>
+            <p>Fecha de salida:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="number" name="releaseYear" placeholder="Ingrese la fecha de salida de la pelicula"><br>
+            <p>Genero:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="text" name="genre" placeholder="Ingrese el genero de la pelicula"><br>
+            <p>Rating:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="number" name="raiting" placeholder="Ingrese la puntuacion de la pelicula"><br>
+            <p>Imagen de portada:</p>
+            <input style="margin: 10px 30px; padding:7px; width: 300px; border-radius: 5px;" required type="text" name="image" placeholder="Ingrese la imagen de porta de la pelicula"><br>
+            <input style="margin: 10px 30px; width: 300px; border-radius: 5px; background-color: #3c1613; color: white; font-weight: bold; padding: 10px;" type="submit" value="Ingresar pelicula">
+        </form>
+    </div>
+</body>
+</html>

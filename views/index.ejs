@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <h2 class="itemMenu"><a href="/">Peliculas </a></h2>
+            <h2 class="itemMenu"><a href="/addMovie">Añadir pelicula</a></h2>
+        </div>
+        <div>
+            <h2>Piero Valentino</h2>
+        </div>
+    </header>
+    <h1 class="title">Lista de peliculas</h1>
+    <% data.forEach(movie => { %>
+        <div class="firstContainer">
+            <div class="peliculaData">
+                <h3><strong><a href="/pelicula/<%= movie._id %>"><%= movie.title %></a></strong></h3>
+                <strong>Duración:</strong> <%= movie.duration %> minutos<br>
+            </div>
+            <div style="width:50%;">
+                <img src="<%= movie.image %> " width="100" alt="asdasdasd">
+            </div>        
+        </div>
+            <% }) %> 
+</body>
+</html>
